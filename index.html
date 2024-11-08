@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oxygen:wght@300;400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="ourstorySlideshow.js"></script>
+    <script src="navigationlink.js"></script>
+    <script src="homepageSlideshow.js"></script>
+    <script src="loginandRegister.js"></script>
+    <script src="map.js"></script>
+    <script src="WelcomePopupBox.js"></script>
+</head>
+<body>   
+    <div class="welcome-popup" id="welcomePopup">
+        <div class="popup-content">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <h2>Welcome to Bean Boutique!</h2>
+            <p>Enjoy exclusive discounts and special offers on our premium coffee!</p>
+            <button class="welcome-btn" onclick="window.location.href='CoffeeSelection.html'">View Menu</button>
+        </div>
+    </div>
+
+    <header>
+        <div class="top-bar">
+            <div class="search-bar-container">
+                <input type="text" class="search-bar" placeholder="Search...">
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo5.png" alt="Bean Boutique Logo"></a>
+                <h1>Bean Boutique</h1>
+            </div>
+            <a href="ShoppingCart.html" class="cart-link">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+            </a>
+            <div class="login-register">
+                <button class="login-btn" id="loginBtn">LOGIN</button>
+                <!-- Pop-up Box -->
+                <div class="popup-box" id="popupBox">
+                    <div class="popup-content">
+                        <span class="close-btn" id="closeBtn">&times;</span>
+                        <h2>Login to Your Account</h2>
+                        <form action="#">
+                            <label for="login-email">Email:</label>
+                            <input type="email" id="login-email" name="email" required placeholder="Enter your email">
+                            <label for="login-password">Password:</label>
+                            <input type="password" id="login-password" name="password" required placeholder="Enter your password">
+                            <button type="submit" class="submit-btn">Login</button>
+                        </form>
+                        <p class="forgot-password">Forgot Password?</p>
+                    </div>
+                </div>
+                <span class="separator">/</span>
+                <button class="register-btn" id="nav-register-btn">REGISTER</button>
+                <!-- Register Pop-up -->
+                <div class="popup-box" id="popupBoxRegister">
+                    <div class="popup-content">
+                        <span class="close-btn" id="closeBtnRegister">&times;</span>
+                        <h2>Register for Coffee Shop</h2>
+                        <form action="mailto:linyuhtun1@gmail.com">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first-name" required placeholder="Enter your first name">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last-name" required placeholder="Enter your last name">
+                            <label for="register-email">Email:</label>
+                            <input type="email" id="register-email" name="email" required placeholder="Enter your email">
+                            <label for="register-password">Password:</label>
+                            <input type="password" id="register-password" name="password" required placeholder="Enter your password">
+
+                            <!-- Choice Events and Workshops -->
+                            <label for="event-selection">Choose Event or Workshop:</label>
+                            <select id="event-selection" name="event-selection" required>
+                                <option value="">Select an event/workshop</option>
+                                <option value="coffee-origins-cultural-events">Coffee Origins & Cultural Events</option>
+                                <option value="holiday-themed-events">Holiday & Themed Events</option>
+                                <option value="coffee-technology-events">Coffee & Technology Events</option>
+                                <option value="live-music-nights">Live Music Nights</option>
+                                <option value="barista-skills-workshops">Barista Skills Workshops</option>
+                                <option value="coffee-brewing-workshops">Coffee Brewing Workshops</option>
+                                <option value="skill-building-hobby-workshops">Skill-Building & Hobby Workshops</option>
+                                <option value="culinary-pastry-workshops">Culinary & Pastry Workshops</option>
+                            </select>
+                                            
+                            <button type="submit" class="submit-btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navigation">
+            <ul>
+              <li><a id="home-link" href="index.html" class="showactive-link">Home</a></li>
+              <li><a id="coffee-link" href="CoffeeSelection.html" class="showactive-link">Coffee Selection</a></li>
+              <li><a id="brewing-link" href="BrewingEquipment.html" class="showactive-link">Brewing Equipment</a></li>
+              <li><a id="events-link" href="EventsandWorkshops.html" class="showactive-link">Events and Workshops</a></li>
+              <li><a id="offers-link" href="SpecialOffers.html" class="showactive-link">Special Offers and Subscriptions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="homepage-slideshow">
+            <div class="slider-homepage">
+                <div class="homepage-slides">
+                    <div class="homepage-slide">
+                        <img src="images/photo_2024-10-12_23-03-25.jpg" alt="Welcome to Bean Boutique">
+                        <div class="slide-content1">
+                            <h2>COFFEE TIME</h2>
+                            <p>"Relax and grab a coffee at our Bean Boutique." Coffee time is a delightful day, with the aroma of freshly brewed coffee sparking conversation, warming the heart, and providing moments to bond with friends and family.</p>
+                            <button class="home-button" onclick="window.location.href='EventsandWorkshops.html'">Explore More</button>
+                        </div>
+                    </div>
+                    <div class="homepage-slide">
+                        <img src="images/coffee-selection-bg.jpg" alt="Freshly Brewed Coffee">
+                        <div class="slide-content2">
+                            <h2>Freshly Brewed Coffee</h2>
+                            <p>Our coffee selection features a variety of ethically sourced beans, including rich, bold roasts and smooth, light blends for every palate.</p>
+                            <button class="home-button" onclick="window.location.href='CoffeeSelection.html'">Shop Coffee</button>
+                        </div>
+                    </div>
+                    <div class="homepage-slide">
+                        <img src="images/photo_2024-10-21_21-08-33.jpg" alt="Join Our Events">
+                        <div class="slide-content3">
+                            <h2>Top-Quality Brewing Equipment</h2>
+                            <p>Explore our premium range of brewing equipment for the perfect cup.</p>
+                            <button class="home-button" onclick="window.location.href='BrewingEquipment.html'">Shop Equipment</button>
+                        </div>
+                    </div>
+                    <div class="homepage-slide">
+                        <img src="images/events&workshopsbg.jpg" alt="Events and Workshops">
+                        <div class="slide-content4">
+                            <h2>Join Our Exciting Events and Workshops</h2>
+                            <p>Learn, brew, and have fun with fellow coffee lovers at our events.</p>
+                            <button class="home-button" onclick="window.location.href='EventsandWorkshops.html'">View Events</button>
+                        </div>
+                    </div>
+                    <div class="homepage-slide">
+                        <img src="images/photo_2024-10-21_22-21-05.jpg" alt="Special Offers and Subscription">
+                        <div class="slide-content5">
+                            <h2>Exclusive Offers & Coffee Subscription</h2>
+                            <h3>45%</h3>
+                            <p id="discount">DISCOUNT!!</p>
+                            <p>Enjoy exclusive deals and subscribe to get fresh coffee delivered regularly.</p>
+                            <button class="home-button" onclick="window.location.href='SpecialOffers.html'">View Offers & Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Arrows for manual navigation -->
+                <div class="arrow left-arrow">&#10094;</div>
+                <div class="arrow right-arrow">&#10095;</div>
+            </div>
+        </section>
+        
+        <!-- Divider Line -->
+        <div class="section-divider"></div>
+
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <div class="welcome-contacts">
+                <h2>Welcome to Bean Boutique Coffee Shop!</h2>
+                <p>Welcome to Bean Boutique! We offer great coffee, tools, and tips for everyone, from beginners to coffee lovers, aiming to provide the best experience with each cup. Explore our products and join a community that shares your passion for coffee.</p>
+            </div>
+        </section>
+
+        <!-- Divider Line -->
+        <div class="section-divider"></div>
+
+        <!-- Our Story Section -->
+        <section class="our-story">
+            <div class="story-container">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide"><img src="images/OurStory1.jpg" alt="Our Coffee Beans"></div>
+                        <div class="slide"><img src="images/OurStory2.jpg" alt="Brewing Process"></div>
+                        <div class="slide"><img src="images/Ourstory3.jpg" alt="Our Coffee Shop"></div>
+                    </div>
+                    <!-- Arrows -->
+                    <div class="arrow left-arrow" onclick="prevSlide()">&#10094;</div>
+                    <div class="arrow right-arrow" onclick="nextSlide()">&#10095;</div>
+                </div>
+
+                <!-- Story Content -->
+                <div class="story-content">
+                    <h2>Our Story</h2>
+                    <p>Welcome to Bean Boutique! Each cup is crafted with care so every visit feels like home. Our journey began with a simple love for coffee and a dream to create a place where people could come together, relax and enjoy the delicious taste of fresh coffee.</p>
+                    <a href="ourStory.html" class="read-more">Read more</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider Line -->
+        <div class="section-divider"></div>
+
+        <!-- Most Selling Coffee Section -->
+        <section class="intro-section">
+            <div class="intro-section-contact">
+                <h2>Most Selling Items</h2>
+                <p>If you more interesting, you discover our coffee selection.</p>
+            </div>
+        </section>
+
+        <div class="coffee-catalogue">
+            <div class="coffee-item">
+                <img src="images/Espresso_Bean.jpg" alt="Espresso_Beans">
+                <h3>Espresso Beans</h3>
+                <p>Rich, bold, and intensely smooth coffee crafted from dark-roasted espresso beans.</p>
+                <p class="price">$5</p>
+                <div class="button-group">
+                    <button class="details-item-btn" onclick="window.location.href='espressoBeansDetails.html'">Item Details</button>
+                    <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+                </div>
+            </div>
+            <div class="coffee-item">
+                <img src="images/Espresso.jpg" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>Bold and concentrated coffee shot, rich in flavor with a smooth, creamy finish and aroma.</p>
+                <p class="price">$10</p>
+                <div class="button-group">
+                    <button class="details-item-btn" onclick="window.location.href='espressoCoffeeDetails.html'">Item Details</button>
+                    <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+                </div>
+            </div>
+            <div class="coffee-item">
+                <img src="images/Dark_Coffee_Beans.jpg" alt="Dark_Coffee_Beans">
+                <h3>Dark Coffee Beans</h3>
+                <p>Deep, robust flavor with earthy tones, crafted from richly roasted dark coffee beans for a bold brew.</p>
+                <p class="price">$15</p>
+                <div class="button-group">
+                    <button class="details-item-btn" onclick="window.location.href='DarkCoffeeBeansDetails.html'">Item Details</button>
+                    <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider Line -->
+        <div class="section-divider"></div>
+
+        <!-- Most Popular Brewing Equipment Section -->
+        <section class="intro-section">
+            <div class="intro-section-contact">
+                <h2>Most Selling Items</h2>
+                <p>If you more interesting, you discover our coffee selection.</p>
+            </div>
+        </section>
+
+        <div class="coffee-catalogue">
+            <div class="coffee-item">
+                <img src="images/espresso-machine1.jpg" alt="espresso">
+                <h3>Espresso Machine</h3>
+                <p>Precision-crafted device that brews rich, concentrated coffee shots by forcing hot water through finely-ground beans.</p>
+                <p class="price">$200</p>
+                <div class="button-group">
+                    <button class="details-item-btn" onclick="window.location.href='espressomachineDetails.html'">Item Details</button>
+                    <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+                </div>
+            </div>
+            <div class="coffee-item">
+                <img src="images/french-press-coffee-maker.jpg" alt="french-press">
+                <h3>French Press</h3>
+                <p>Classic brewing tool that steeps coarse coffee grounds for a rich, full-bodied coffee experience.</p>
+                <p class="price">$150</p>
+                <div class="button-group">
+                    <button class="details-item-btn" onclick="window.location.href='frenchPressDetails.html'">Item Details</button>
+                    <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+                </div>
+            </div>
+            <div class="coffee-item">
+                <img src="images/pour-over-equipment.jpg" alt="pour-over">
+                <h3>Pour Over</h3>
+                <p>Methodical coffee brewing that pours hot water over grounds for a clean, flavorful, and aromatic cup.</p>
+                <p class="price">$100</p>
+                <div class="button-group">
+                    <button class="details-item-btn" onclick="window.location.href='pourOverDetails.html'">Item Details</button>
+                    <button class="add-to-cart-btn" onclick="window.location.href='ShoppingCart.html'">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider Line -->
+        <div class="section-divider"></div>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <h2>Visit Us</h2>
+            <p>We’d love to have you over! Check out our location below.</p>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.953025574148!2d96.1517439736734!3d16.779012520048973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ec821e07a833%3A0xdde741e3cd511209!2sJunction%20City!5e0!3m2!1sen!2smm!4v1730047817178!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo and Slogan -->
+            <div class="footer-logo">
+                <a href="index.html"><img src="images/logo5.png" alt="Bean Boutique Logo"></a>
+                <h2>BEAN BOUTIQUE COFFEE SHOP</h2>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="footer-links">
+                <div>
+                    <h3>EXPLORE</h3>
+                    <a href="index.html">Home</a><br>
+                    <a href="CoffeeSelection.html">Coffee Selections</a><br>
+                    <a href="index.html">Brewing Equipment</a><br>
+                    <a href="EventsandWorkshops.html">Events and Workshops</a><br>
+                    <a href="SpecialOffers.html">Special Offers and Subscriptions</a>
+                </div>
+                <div>
+                    <h3>ABOUT US</h3>
+                    <a href="ourStory.html">Our Story</a><br>
+                </div>
+                <div>
+                    <h3>CONTACT US</h3>
+                    <p><strong>Location: </strong>3rd Floor, Junction City, Yangon</p>
+                    <p><strong>Phone:</strong> <a href="tel:+1234567890">+959427533492</a></p>
+                    <p><strong>Email:</strong> <a href="mail:beanboutiqueofficial@gmail.com">beanboutiqueofficial@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <a href="https://facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://tiktok.com" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <p>&copy; 2024 Bean Boutique. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
